@@ -1,0 +1,104 @@
+/* RESPONISVE TABLET */
+
+@media(max-width:1366px){
+    .logo-header{
+        font-size: 1.9em;
+    }
+    
+    .nav-header li{
+        font-size: 1.2em;
+    }
+}
+
+/* RESPONSIVE MENÚ BARS FOR TABLETS */
+
+@media(max-width: 950px){
+
+/*   HEADER NAV */
+
+    .nav-header{
+        position: absolute;
+        display: block;
+        height: 100vh;
+        width: 60%;
+        background: rgba(0,0,0,.5);
+        margin-top: 0;
+        font-size: 1.2em;
+        left: -100%;
+        top: 0;
+        transition: all .5s ease;
+    }
+
+    .active {
+        display: block;
+        left: 0;
+    }
+
+    .nav-header li {
+        margin-top: 2em;
+        border-bottom: 1px solid #ccc ;
+    }
+
+    .bars{
+        display: block;
+    }
+
+    /* CARDS */
+
+    .container-cards{
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+
+    .container-projects{
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+}
+
+/* RESPONSIVE FOR PHONES */
+
+@media(max-width: 600px){
+    :root {
+        --tittle-main: 1.3em;
+    }
+    /* NAV */
+
+    .nav-header{
+        font-size: 1.2em;
+    }
+
+    /* MAIN HEADER */
+
+    .main-header{
+        width: 15em;
+    }
+
+    .paragraph-header{
+        font-size: .9em;
+    }
+
+    .contact-me{
+        font-size: .9em;
+    }
+
+    /* CARDS */
+
+    .container-cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .container-projects{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    /* ABOUT ME */
+
+    .container-about-me p{
+        font-size: .8em;
+    }
+
+    .container-about-me div a{
+        font-size: .7em;
+    }
+}
